@@ -1,6 +1,4 @@
 <?php
-
-// PHP 8.0
 // Aryantdot
 
 $__files = [];
@@ -15,7 +13,7 @@ function localSearch($file , $dir){
                     $total += $e;
                 }else{
                     if(strpos(basename($tag), $file) !== false){
-                        $__files[++$total] = $tag;
+                        $__files[] = $tag;
                     }
                 }
             endforeach;
